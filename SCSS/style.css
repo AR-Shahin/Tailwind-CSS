@@ -1,0 +1,47 @@
+* {
+  list-style: none;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+}
+
+body header nav {
+  background: #222f3e;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+}
+body header nav img {
+  width: 130px;
+}
+body header nav ul {
+  align-items: center;
+  display: flex;
+  justify-content: flex-end;
+}
+body header nav ul li {
+  margin: 0 5px;
+}
+body header nav ul li a {
+  font-family: monospace;
+  font-weight: 700;
+  font-size: 14px;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  transition: 0.6s ease;
+}
+body header nav ul li a:hover {
+  color: #c8d6e5;
+}
+body h1 {
+  color: green;
+}
+body h1 span {
+  color: teal !important;
+  font-family: monospace;
+  font-weight: 700;
+  font-size: 25;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,45 @@
+// Variables
+@import "./assets/scss/_var.scss";
+@import "./assets/scss/reset";
+@import "./assets/scss/_mixins";
+body {
+  //   background: lighten($teal, 10%);
+
+  header {
+    nav {
+      background: $blue;
+      padding: 10px 20px;
+      display: flex;
+      justify-content: space-between;
+      img {
+        width: 130px;
+      }
+      ul {
+        align-items: center;
+        display: flex;
+        justify-content: flex-end;
+        li {
+          margin: 0 5px;
+          a {
+            @include font_mix;
+            color: $white;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            transition: 0.6s ease;
+            &:hover {
+              color: $h-white;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  h1 {
+    color: green;
+    span {
+      color: teal !important;
+      @include font_mix(25);
+    }
+  }
+}

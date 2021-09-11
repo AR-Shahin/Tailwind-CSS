@@ -1,0 +1,7 @@
+@mixin font_mix($size: 14px) {
+  font: {
+    family: monospace;
+    weight: 700;
+    size: $size;
+  }
+}

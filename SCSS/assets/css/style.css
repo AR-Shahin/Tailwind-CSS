@@ -1,0 +1,12 @@
+body {
+  background: red;
+}
+
+body h1 {
+  color: green;
+}
+
+body h1 span {
+  color: wheat !important;
+}
+/*# sourceMappingURL=style.css.map */
