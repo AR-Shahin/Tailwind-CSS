@@ -1,0 +1,25 @@
+@import "./var";
+$cols: 20, 30, 50, 70, 80;
+@each $col in $cols {
+  .col-#{$col} {
+    flex-basis: unquote(addPercentage($col));
+    @include padding_mix_btn(0, 5px);
+    margin: 0 5px;
+  }
+}
+
+$fonts: 10px, 15px, 20px, 50px;
+@each $font in $fonts {
+  .font-#{$font} {
+    font-size: $font;
+  }
+}
+
+// $colors: $red, $teal;
+// @each $color in $colors {
+//   $class: unquote(hexToString($color));
+//   //$class: hexToString($color);
+//   .bg-#{$class} {
+//     background: $color;
+//   }
+// }

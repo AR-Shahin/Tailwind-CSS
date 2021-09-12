@@ -1,10 +1,16 @@
-// Variables
+// Imports
 @import "./assets/scss/_var.scss";
 @import "./assets/scss/reset";
 @import "./assets/scss/_mixins";
+@import "./assets/scss/_extends";
+@import "./assets/scss/func";
+@import "./assets/scss/loops";
+
 body {
   //   background: lighten($teal, 10%);
-
+  //   @include theme_changer(light);
+  //   background-color: mix(red, teal, 55%);
+  text-align: center;
   header {
     nav {
       background: $blue;
@@ -40,6 +46,24 @@ body {
     span {
       color: teal !important;
       @include font_mix(25);
+    }
+  }
+  #btn_hero {
+    @extend .btn;
+    background: $blue;
+    @include padding_mix_btn(10px, 15px);
+    font-size: 14px;
+  }
+  #btn_hover {
+    @extend .btn;
+    @include padding_mix_btn(10px, 15px);
+    background: $teal;
+    transition: 0.6s ease-out;
+    // @extend .font-50px;
+    // margin-top: sum(10, 20);
+    // width: addPercentage(50%);
+    &:hover {
+      background: darken($teal, 50%);
     }
   }
 }

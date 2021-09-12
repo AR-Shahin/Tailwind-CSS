@@ -5,3 +5,18 @@
     size: $size;
   }
 }
+
+@mixin padding_mix_btn($tb, $lr) {
+  padding: $tb $lr;
+}
+
+@mixin theme_changer($theme) {
+  @if ($theme == "light") {
+    background: white;
+  } @else if($theme == "dark") {
+    background: #000;
+    color: #fff;
+  } @else {
+    background: blue;
+  }
+}

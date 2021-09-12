@@ -3,8 +3,71 @@
   text-decoration: none;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
+.btn, body #btn_hover, body #btn_hero {
+  border: none;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+  display: inline-block;
+  color: #fff;
+}
+
+.row {
+  display: flex;
+}
+
+.col-20 {
+  flex-basis: 20%;
+  padding: 0 5px;
+  margin: 0 5px;
+}
+
+.col-30 {
+  flex-basis: 30%;
+  padding: 0 5px;
+  margin: 0 5px;
+}
+
+.col-50 {
+  flex-basis: 50%;
+  padding: 0 5px;
+  margin: 0 5px;
+}
+
+.col-70 {
+  flex-basis: 70%;
+  padding: 0 5px;
+  margin: 0 5px;
+}
+
+.col-80 {
+  flex-basis: 80%;
+  padding: 0 5px;
+  margin: 0 5px;
+}
+
+.font-10px {
+  font-size: 10px;
+}
+
+.font-15px {
+  font-size: 15px;
+}
+
+.font-20px {
+  font-size: 20px;
+}
+
+.font-50px {
+  font-size: 50px;
+}
+
+body {
+  text-align: center;
+}
 body header nav {
   background: #222f3e;
   padding: 10px 20px;
@@ -42,6 +105,19 @@ body h1 span {
   font-family: monospace;
   font-weight: 700;
   font-size: 25;
+}
+body #btn_hero {
+  background: #222f3e;
+  padding: 10px 15px;
+  font-size: 14px;
+}
+body #btn_hover {
+  padding: 10px 15px;
+  background: #16a085;
+  transition: 0.6s ease-out;
+}
+body #btn_hover:hover {
+  background: black;
 }
 
 /*# sourceMappingURL=style.css.map */

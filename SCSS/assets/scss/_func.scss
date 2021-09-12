@@ -1,0 +1,25 @@
+@function sum($params...) {
+  $sum: 0;
+  @each $param in $params {
+    $sum: $sum + $param;
+  }
+  @return $sum;
+}
+
+@function addPercentage($val) {
+  $p: "%";
+  @return $val + $p;
+}
+
+// @function hexToString($hex) {
+//   @if ($hex == unquote("#e74c3c")) {
+//     @return "red";
+//   } @else if ($hex == unquote("#27ae60")) {
+//     @return "teal";
+//   }
+
+//   //   } @else if ($hex == "#27ae60") {
+//   //     @return "green";
+//   //   }
+//   @return $hex;
+// }
